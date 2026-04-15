@@ -1,0 +1,551 @@
+/* HEADER */
+html {
+    scroll-behavior:smooth;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap:50px;
+    background: #e8f5e9a4; /* Transparence */
+    backdrop-filter: blur(12px); /* Effet de flou */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    padding: 0px 30px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    z-index: 1000;
+    font-family: "Orkney", sans-serif;
+    border-radius: 15px;
+}
+
+/* Conteneur logo + titre */
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Titre */
+h1 {
+    font-size: 40px;
+    color: black;
+}
+
+/* MENU */
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 200%;
+    transition: 0.3s;
+    margin-right: 40px;
+}
+
+nav a:hover {
+    color: #3BBF93;
+}
+
+body {
+    padding-top: 90px;
+    margin-left: 19%;
+}
+
+h2 {
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Orkney", sans-serif;
+}
+
+p{
+    color: #2E7D32;
+    font-size: 10px;
+    text-align: center;
+    font-family: "Orkney", sans-serif;
+    font-style: normal;
+}
+
+.section img {
+    width: 500px; /* Ajuste la taille selon tes besoins */
+    border-radius: 15px;
+    margin-left: 100px;
+}
+
+.section p {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.5; /* Espacement entre lignes */
+    margin: 100px;
+}
+
+/* SECTION A PROPOS */
+#a-propos {
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre le titre */
+    max-width: 1200px;
+    margin: 50 auto;
+    padding: auto;
+}
+
+#a-propos h2 {
+    font-size: 32px;
+    margin-bottom: 70px; /* Espace entre le titre et le contenu */
+    text-align: center; 
+}
+
+#a-propos .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 120px;
+}
+
+/* Image */
+#a-propos img {
+    width: 580px;
+    border-radius: 20px;
+    margin-left: -10%;
+}
+
+/* Texte général */
+#a-propos .text-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Paragraphe normal */
+#a-propos .text-container p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+    min-width: 125%;
+}
+
+/* Liste des objectifs */
+#a-propos .objectifs {
+    list-style: none;
+    padding: 0;
+}
+
+#a-propos .objectifs li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+/* Icônes vertes */
+#a-propos .objectifs li::before {
+    content: "✅";
+    font-size: 20px;
+}
+
+/* Texte en italique */
+#a-propos em {
+    font-style: italic;
+    font-size: 20px;
+    color: black;
+}
+
+/* Bloc d'engagement */
+#a-propos .engagement {
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* SECTION CONTACTS */
+#contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 15px;
+}
+
+/* Conteneur des informations de contact */
+#contacts .contact-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet le passage à la ligne si l'écran est trop petit */
+    justify-content: space-between; 
+    gap: 20px; /* Espacement entre les cases */
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Chaque bloc de contact */
+#contacts .contact-box {
+    flex: 1; /* Permet de répartir l’espace équitablement */
+    min-width: 230px; /* Largeur minimale pour éviter les trop petites cases */
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+/* Titre dans chaque case */
+#contacts .contact-box h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #3BBF93;
+    margin: 0;
+    
+}
+
+/* Texte dans chaque case */
+#contacts .contact-box p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+/* Lien email et téléphone */
+#contacts .contact-box a {
+    color: #2959a0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contacts .contact-box a:hover {
+    text-decoration: underline;
+}
+
+/* Image */
+#contacts img {
+    width: 120%;
+    border-radius: 20px; 
+    margin-left: 0px; 
+
+}
+
+/* SECTION FAQ */
+#faq {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2em;
+    font-family: Arial, sans-serif;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    width: 110%;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color:#3BBF93;
+    font-weight: bold;
+}
+
+.faq-question .icon {
+    font-size: 1.5em;
+    color:#2E7D32;
+    transition: transform 0.3s ease;
+    margin-left: 25px;
+}
+
+.faq-item.active .faq-question .icon {
+    transform: rotate(180deg); /* transforme + en × */
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.faq-item.active .faq-answer {
+    opacity: 1;
+}
+
+.faq-answer p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.faq-question:hover {
+    color: #398d3d;
+    background-color: #e8f5e9; /* Vert très clair */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* FORMULAIRE INSCRIPTION */
+
+/* Conteneur principal */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #f4f4f4;
+    padding: 30px;
+    margin: auto, -10%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Titre */
+h2 {
+    color: #2E7D32;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+/* Champs de saisie */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Effet focus sur les champs */
+input:focus {
+    border-color: #2E7D32;
+    outline: none;
+    box-shadow: 0 0 5px #2e7d3280;
+}
+
+/* Bouton d'enregistrement */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2E7D32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Effet hover sur le bouton */
+button:hover {
+    background-color: #256528;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+/* SECTION PROFIL */
+
+header2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e8f5e9a4; /* Transparence */
+    backdrop-filter: blur(12px); /* Effet de flou */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    padding: 0px 20px;
+    border-radius: 15px;
+    position: fixed;
+    top: 10px;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 70%;
+    z-index: 1000;
+    font-family: "Orkney", sans-serif;
+}
+
+.Titre_User h1 {
+    font-size: 200%;
+    color: black;
+    font-family: "Orkney", sans-serif;
+    position:absolute;
+    left: 1340px;
+    top: 13px;
+    text-align: center;
+    width: 30%;
+}
+
+.logoUser {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    right: -420px;
+    top: 15px;
+}
+
+/* SECTION VOS DONNEES */
+#VosDonnees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 160px auto 50px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Orkney", sans-serif;
+    position: relative;
+    left: -12%;
+    top: 50%;
+    margin-top: 50px;
+}
+
+
+#VosDonnees h2 {
+    font-size: 28px;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+
+#VosDonnees div.content p{
+font-family: "Orkney", sans-serif;
+font-size: 100%;
+}
+
+
+/* SECTION SE COMPARER */
+#SeComparer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 160px auto 50px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Orkney", sans-serif;
+    position: relative;
+    left: -12%;
+    top: 50%;
+}
+
+#SeComparer h2 {
+    font-size: 28px;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+#SeComparer div.content p{
+font-family: "Orkney", sans-serif;
+font-size: 100%;
+}
+
+/* SECTION CONSEIL */
+#Conseil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 160px auto 50px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Orkney", sans-serif;
+    position: relative;
+    left: -12%;
+    top: 50%;
+}
+
+#Conseil h2 {
+    font-size: 28px;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+#Conseil div.content p{
+font-family: "Orkney", sans-serif;
+font-size: 100%;
+}
+
+/* SECTION MON COMPTE */
+#MonCompte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 160px auto 50px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Orkney", sans-serif;
+    position: relative;
+    left: -12%;
+    top: 50%;
+}
+
+#MonCompte h2 {
+    font-size: 28px;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+#MonCompte div.content p {
+font-family: "Orkney", sans-serif;
+font-size: 100%;
+}
+
+
+#VosDonnees ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#VosDonnees ul li::before {
+    content: "• ";
+    color: #2e7d32;
+    font-weight: bold;
+    margin-right: 5px;
+}

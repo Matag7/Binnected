@@ -1,0 +1,88 @@
+/* Général */
+body {
+    font-family: "Orkney", sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Titre au-dessus du formulaire */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Conteneur du formulaire */
+.form-container {
+    background-color: #e8f5e9a4;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Champs */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    border-color: #48a868;
+    outline: none;
+}
+
+/* Bouton */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    background-color: #48a868;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b9260;
+}
+
+/* Lien en dessous du formulaire */
+.form-footer {
+    margin-top: 15px;
+    text-align: center;
+    color: #666;
+}
+
+.form-footer a {
+    color: #48a868;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
